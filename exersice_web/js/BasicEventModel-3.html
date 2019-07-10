@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>BasicEventModel-3</title>
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+        <script type="text/javascript">
+            window.onload = function() {
+                document.form1.onsubmit = function() {
+                    if(this.data.value.length === 0) {
+                        return false;
+                    }
+					else
+					{
+						var data = form1.data.value;
+						document.write('成功提交<br>');
+						document.write('訊息內容:<br>');
+						document.write(data);
+					}
+					
+                };
+            };
+			
+        </script>
+    </head>
+    <body>
+        <form name="form1">
+            輸入資料：<input name="data""><br>
+            <button type="submit">送出</button>
+        </form>
+    </body>
+</html>

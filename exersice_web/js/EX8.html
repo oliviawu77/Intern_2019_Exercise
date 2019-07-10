@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html; charset=utf-8">
+			<script type="text/javascript">
+				function Check ( ){
+				if(document.thisform.name.value==""){
+				alert("姓名沒有填");document.thisform.name.focus();}
+				else if(document.thisform.birthday.value==""){
+				alert("生日沒有填");document.thisform.birthday.focus();}
+				else if(document.thisform.phone.value==""){
+				alert("手機沒有填");document.thisform.phone.focus();}
+				else if(document.thisform.brief.value==""){
+				alert("自我簡介沒有填");document.thisform.brief.focus();}
+				else
+					document.thisform.submit();}
+			</script>
+	</head>
+	<body>
+		<form name="thisform"><table>
+		<tr><td>姓名</td><td><input type=text name="name"></td>
+		</tr>
+		<tr><td>生日</td><td><input type=text name="birthday"></td>
+		</tr>
+		<tr><td>手機</td><td><input type=text name="phone" maxlength=10></td>
+		</tr>
+		<tr><td>自我簡介</td><td><textarea name="brief" rows=3></textarea></td>
+		</tr>
+		<tr><td colspan=2><input type=button onclick="Check()" value="確認"></td>
+		</tr></table>
+		</form>
+	</body>
+</html>	

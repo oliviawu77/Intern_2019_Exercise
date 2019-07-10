@@ -1,0 +1,19 @@
+<html>
+	<script>
+		function openImage(){
+		var img = new Image();
+		//img.width = 200; //resize
+		//img.height = 250;
+		img.src = 'hip-hop-6-1024x828.jpg';
+		
+		
+		document.body.appendChild(img);
+		//document.write("onclick的應用");
+		console.log('Image is loaded');
+	}
+	</script>
+<body>
+	<input type=button onclick="openImage()" 
+			value="點開圖片">
+</body>
+</html>
